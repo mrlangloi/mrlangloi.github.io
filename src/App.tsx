@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 import { projects } from './data/projects';
@@ -10,19 +11,20 @@ function App() {
     return (
         <div className="container">
             {/* Navbar */}
-            <Navbar/>
+            <Navbar />
 
             <main className="main-content">
 
                 {/* Intro */}
                 <header className="intro">
                     <h1>Hi, I'm Ricky!</h1>
-                    <p>I am a 3rd-year Computing Science SoSy Student @ SFU with a passion for both building web applications and troubleshooting technical issues</p>
+                    <h2>I am a 3rd-year Computing Science SoSy Student @ SFU.</h2>
+                    <h2>I have a knack for building applications and troubleshooting technical issues.</h2>
                 </header>
 
-                {/* Projects */}
-                <section id="projects" className="projects-section">
-                    <h2>Featured Projects</h2>
+                {/* Featured Projects */}
+                <section id="projects" className="featured-projects">
+                    <h1>Featured Projects</h1>
                     <div className="grid">
                         {projects.map((project) => (
                             <ProjectCard
@@ -35,21 +37,9 @@ function App() {
                         ))}
                     </div>
                 </section>
-
-                {/* Footer */}
-                <footer id="footer" className="footer-section">
-                    <p>
-                        Created with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React v19.2.0</a> and <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">Vite v7.2.4</a>
-                    </p>
-                    <div className="social-links">
-                        <a href="https://github.com/mrlangloi" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://www.linkedin.com/in/ricky-c0997/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </div>
-                    <p>
-                        &copy; 2026, Ricky Cheung
-                    </p>
-                </footer>
             </main>
+            {/* Footer */}
+            <Footer />
         </div>
     );
 }
