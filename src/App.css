@@ -44,7 +44,7 @@ body {
     border-right: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
-    padding: 0rem 1.5rem;
+    padding: .75rem 4.5rem;
     gap: 2.5rem;
     z-index: 100;
 }
@@ -105,6 +105,9 @@ body {
 }
 
 .nav-contacts {
+    border-left: 1px solid var(--border-color);
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
     display: flex;
     align-items: center;
 }
@@ -128,15 +131,22 @@ body {
 }
 
 .intro h1 {
-    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.projects-section {
+h1 {
+    font-size: 3rem;
+}
+
+.featured-projects {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -145,7 +155,6 @@ body {
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    padding: 20px;
     border-radius: 12px;
     transition: transform 0.2s, border-color 0.2s;
 }
@@ -156,11 +165,27 @@ body {
     box-shadow: 0 5px 15px rgba(128, 128, 128, 0.1);
 }
 
-.card h3 {
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
     color: var(--text-primary);
 }
 
-.card p {
+.card-content p {
     color: var(--text-primary);
 }
 
@@ -183,8 +208,8 @@ body {
 .footer-section {
     height: 10rem;
     padding-top: 2.5rem;
-    padding-left: 1.5rem;
-    padding-bottom: 3.5rem;
+    padding-left: 3.5rem;
+    margin-bottom: 3.5rem;
     border-top: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
