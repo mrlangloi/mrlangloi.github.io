@@ -1,22 +1,40 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faSteam } from '@fortawesome/free-brands-svg-icons/faSteam';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-interface NavbarProps {
-    name: string;
-}
 
-const Navbar = (props : NavbarProps) => {
-
-    const {name} = props;
+const Navbar = () => {
 
     return (
-        <nav className="side-navbar">
+        <nav className="navbar">
             <div className="nav-brand">
-                <a href="/">rcheung</a>
+                <a href="/">
+                    <p>rcheung</p>
+                </a>
             </div>
 
             <ul className="nav-links">
-                <li><a href="#projects">Projects</a></li>
+                {/* <li><a href="#projects">Projects</a></li> */}
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div className="nav-contacts">
+                        <a className="nav-contacts-icons" href="https://www.linkedin.com/in/ricky-c0997/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} fontSize="24px" />
+                        </a>
+                        <a className="nav-contacts-icons" href="https://www.github.com/mrlangloi" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} fontSize="24px" />
+                        </a>
+                        <a className="nav-contacts-icons" href="https://www.steamcommunity.com/id/rikkiimaru/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faSteam} fontSize="24px" />
+                        </a>
+                        <a className="nav-contacts-icons" href="mailto:rcheung1997@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faEnvelope} fontSize="24px" />
+                        </a>
+                    </div>
+                </li>
             </ul>
         </nav>
     );
