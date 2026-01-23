@@ -10,10 +10,13 @@ const Footer = () => {
     return (
         <footer id="footer" className="footer-section">
             <p>
-                Created with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React v19.2.0</a> and <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">Vite v7.2.4</a>
+                Created with <a href="https://www.react.dev/" target="_blank" rel="noopener noreferrer">React v19.2.0</a> and <a href="https://www.vite.dev/" target="_blank" rel="noopener noreferrer">Vite v7.2.4</a>
             </p>
             <p>
-                Icons by <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> and <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">FlatIcon</a>
+                Icons by <a href="https://www.fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> and <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">FlatIcon</a>
+            </p>
+            <p>
+                Header images by <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a>
             </p>
             <div className="social-links">
                 <a className="social-links-icons" href="https://www.linkedin.com/in/ricky-c0997/" target="_blank" rel="noopener noreferrer">
