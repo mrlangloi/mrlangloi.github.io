@@ -1,0 +1,105 @@
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+    background-clip: padding-box;
+}
+
+/* animated glowing border */
+/* credits to https://www.youtube.com/watch?v=8SeFSmvx3AA */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(101% + 1px);
+    height: calc(101% + 2px);
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+    z-index: -1;
+    background: linear-gradient(
+        var(--rotation),
+        /* #fad850, */
+        /* #fde68a, */
+        var(--text-link),
+        var(--text-link-hover),
+        transparent 60%,
+        transparent
+    );
+    animation: spin 8s linear infinite;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    -webkit-animation: spin 8s linear infinite;
+}
+
+@property --rotation {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+@keyframes spin {
+    0% {
+        --rotation: 0deg;
+    }
+    to {
+        --rotation: 360deg;
+    }
+}
+
+.card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(128, 128, 128, 0.1);
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-content {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.card-content h3 {
+    color: var(--text-primary);
+}
+
+.card-content p {
+    color: var(--text-primary);
+}
+
+.tag {
+    background: var(--border-color);
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
