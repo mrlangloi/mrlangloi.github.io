@@ -19,13 +19,15 @@ const ProjectCard = (props: ProjectProps) => {
             </div>
             <div className={styles["card-content"]}>
                 <h3>{title}</h3>
-                <p>{description}</p>
                 <div className={styles["tech-stack"]}>
                     {tech.map((t, index) => (
                         <span key={index} className={styles.tag}>{t}</span>
                     ))}
                 </div>
-                <a href={link} target="_blank" rel="noopener noreferrer">Github</a>
+                <p>{description}</p>
+                <div className={styles["card-links"]}>
+                    <a href={link} target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
             </div>
 
         </div>
