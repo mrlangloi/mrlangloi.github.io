@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className={styles["nav-content"]}>
             <div className={styles["nav-brand"]}>
-                <a href="/portfolio">
+                <a href="/">
                     <p>ricky c.</p>
                 </a>
             </div>
