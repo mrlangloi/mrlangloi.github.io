@@ -147,39 +147,30 @@ a {
 }
 
 .courses-grid {
-    list-style: none; /* Removes bullets */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns if space allows */
-    gap: 0.5rem 2rem; /* Vertical gap 0.5rem, Horizontal gap 2rem */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem 2rem;
 }
 
 .courses-grid li {
     display: flex;
     align-items: baseline;
-    gap: 0.75rem; /* This is the ONLY space between code and name */
+    gap: 0.75rem;
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.5;
 }
 
-/* Style the Course Code (CMPT XXX) */
 .courses-grid li span {
-    font-family: 'JetBrains Mono', monospace; /* Technical look */
+    font-family: 'JetBrains Mono', monospace;
     color: var(--text-primary);
     font-weight: 600;
-    min-width: 85px; /* Ensures all course names start at the same vertical line */
+    min-width: 85px;
     display: inline-block;
 }
-
-/* Add a small dot or dash before each item
-.courses-grid li::before {
-    content: ">";
-    color: var(--text-link);
-    font-family: monospace;
-    font-weight: bold;
-} */
 
 .profile-photo {
     width: 100%;
