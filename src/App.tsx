@@ -1,41 +1,30 @@
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
+import Home from './pages/Home';
+import About from './pages/About';
 import Navbar from './components/Navbar';
-import ProjectCard from './components/ProjectCard';
-import { projects } from './data/projects';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-    const [email, setEmail] = useState("rcheung1997@gmail.com");
-
     return (
-        <div className="container">
-            {/* Navbar */}
-            <Navbar />
-            {/* Intro */}
-            <Hero />
-            <main className="main-content">
-                {/* Featured Projects */}
-                <section id="projects" className="featured-projects">
-                    <h1>Featured Projects</h1>
-                    <div className="grid">
-                        {projects.map((project) => (
-                            <ProjectCard
-                                key={project.id}
-                                id={project.id}
-                                title={project.title}
-                                description={project.description}
-                                tech={project.tech}
-                                link={project.link}
-                            />
-                        ))}
-                    </div>
-                </section>
-            </main>
-            {/* Footer */}
-            <Footer />
-        </div>
+        <Router>
+            <div className="container">
+                {/* Navbar */}
+                <Navbar />
+
+                <main className="main-content">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        {/* <Route path="/projects" element={<Projects />} /> */}
+                        <Route path="/about" element={<About />} />
+                    </Routes>
+                    {/* Footer */}
+                    <Footer />
+                </main>
+            </div>
+        </Router>
     );
 }
 
