@@ -1,12 +1,19 @@
-.footer-content {
-    padding-top: 2.5rem;
-    padding-left: 2rem;
-    padding-bottom: 4rem;
-    margin: 0rem 3rem;
-    border-top: 1px solid rgba(56, 189, 248, 0.2);
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inner {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem 2rem;
+    border-top: 1px solid rgba(56, 189, 248, 0.2); 
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    align-items: flex-start;
 }
 
 .footer-links {
@@ -28,4 +35,12 @@
 .social-links a:hover {
     transition: 0.2s;
     color: var(--text-link-hover);
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        padding: 2.5rem 0 4rem; 
+        align-items: center; 
+        text-align: center;
+    }
 }
