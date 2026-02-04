@@ -4,6 +4,7 @@ import { faSteam } from '@fortawesome/free-brands-svg-icons/faSteam';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from "./Navbar.module.css";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -11,14 +12,14 @@ const Navbar = () => {
         <nav className={styles["nav-content"]}>
             <div className={styles["nav-inner"]}>
                 <div className={styles["nav-brand"]}>
-                    <a href="/">
+                    <Link to="/">
                         <p>ricky c.</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <ul className={styles["nav-links"]}>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     {/* <li><a href="#contact">Contact</a></li> */}
                     <li>
                         <div className={styles["nav-contacts"]}>

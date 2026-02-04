@@ -46,12 +46,16 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+}
+
+.home-section {
     max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .featured-projects {
-    margin: 0 calc(var(--spacing-unit)*16);
     padding: calc(var(--spacing-unit)*24) 0;
     display: flex;
     flex-direction: column;
@@ -97,5 +101,107 @@ a {
     .grid {
         grid-template-columns: 1fr; 
         gap: calc(var(--spacing-unit)*6);
+    }
+}
+
+/* About page */
+.about-section {
+    padding: 12rem 2rem 8rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.about-content-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text-side h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(to right, #fff, var(--text-link));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text-side p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.courses-container {
+    margin: 2rem 0;
+}
+
+.courses-container h3 {
+    color: var(--text-link);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.courses-grid {
+    list-style: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns if space allows */
+    gap: 0.5rem 2rem; /* Vertical gap 0.5rem, Horizontal gap 2rem */
+}
+
+.courses-grid li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem; /* This is the ONLY space between code and name */
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Style the Course Code (CMPT XXX) */
+.courses-grid li span {
+    font-family: 'JetBrains Mono', monospace; /* Technical look */
+    color: var(--text-primary);
+    font-weight: 600;
+    min-width: 85px; /* Ensures all course names start at the same vertical line */
+    display: inline-block;
+}
+
+/* Add a small dot or dash before each item
+.courses-grid li::before {
+    content: ">";
+    color: var(--text-link);
+    font-family: monospace;
+    font-weight: bold;
+} */
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .about-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-text-side h1 {
+        font-size: 2.5rem;
+        text-align: center;
     }
 }
