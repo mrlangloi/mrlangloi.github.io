@@ -13,12 +13,9 @@ function App() {
         <div className="container">
             {/* Navbar */}
             <Navbar />
-
+            {/* Intro */}
+            <Hero />
             <main className="main-content">
-
-                {/* Intro */}
-                <Hero />
-
                 {/* Featured Projects */}
                 <section id="projects" className="featured-projects">
                     <h1>Featured Projects</h1>
