@@ -1,5 +1,6 @@
 import Course from "../components/Course";
 import { courses } from "../data/courses";
+import myProfileImage from "../assets/my_image.jpg";
 
 const About = () => {
     return (
@@ -24,7 +25,7 @@ const About = () => {
                 </div>
 
                 <div className="about-image-side">
-                    <img src="/src/assets/my_image.jpg" alt="Ricky C." className="profile-photo" />
+                    <img src={myProfileImage} alt="Ricky C." className="profile-photo" />
                 </div>
             </div>
         </section>
