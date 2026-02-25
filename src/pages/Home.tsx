@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects';
+import { featuredProjects } from '../data/projects';
 
 const Home = () => (
     <>
@@ -11,7 +11,7 @@ const Home = () => (
             <div className="featured-projects">
                 <h1>Featured Projects</h1>
                 <div className="grid">
-                    {projects.map((project) => (
+                    {featuredProjects.map((project) => (
                         <ProjectCard
                             key={project.id}
                             id={project.id}
