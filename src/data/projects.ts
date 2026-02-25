@@ -6,7 +6,7 @@ export interface Project {
     link: string;
 }
 
-const ftProjects = [
+const featuredProjectsList = [
     {
         title: "Personal Calendar Tracker",
         description: "A RESTful personal calendar and tracker application developed using Java and Spring Boot",
@@ -28,12 +28,12 @@ const ftProjects = [
     },
 ];
 
-export const featuredProjects = ftProjects.map((project, index) => ({
+export const featuredProjects = featuredProjectsList.map((project, index) => ({
     id: index + 1,
     ...project
 }))
 
-const projects = [
+const allProjectsList = [
     {
         title: "OBS Canvas Overlay v2 (Work in Progress)",
         description: "An updated OBS Canvas Overlay using TypeScript, React Compiler, and PostgreSQL",
@@ -67,7 +67,7 @@ const projects = [
     },
 ];
 
-export const allProjects = projects.map((project, index) => ({
+export const allProjects = allProjectsList.map((project, index) => ({
     id: index + 1,
     ...project
 }));
