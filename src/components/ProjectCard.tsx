@@ -14,8 +14,8 @@ const ProjectCard = (props: ProjectProps) => {
 
     const { id, title, description, tech, link } = props;
 
-    const pattern = PATTERNS[(id % PATTERNS.length) - 1];
-    const color = COLORS[(id % COLORS.length) - 1];
+    const pattern = PATTERNS[(id - 1) % PATTERNS.length];
+    const color = COLORS[(id - 1) % COLORS.length];
     
     const style = { backgroundImage: `url("${pattern}")`, backgroundColor: color, backgroundSize: '128px' };
 
