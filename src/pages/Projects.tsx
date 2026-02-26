@@ -1,17 +1,13 @@
-import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
-import { featuredProjects } from '../data/projects';
+import { allProjects } from '../data/projects';
 
-const Home = () => (
-    <>
-        {/* Intro */}
-        <Hero />
-        {/* Featured Projects */}
-        <section id="projects" className="home-section">
+const Projects = () => {
+    return (
+        <section className="home-section">
             <div className="projects-section">
-                <h1>Featured Projects</h1>
+                <h1>All Projects</h1>
                 <div className="grid">
-                    {featuredProjects.map((project) => (
+                    {allProjects.map((project) => (
                         <ProjectCard
                             key={project.id}
                             id={project.id}
@@ -24,7 +20,7 @@ const Home = () => (
                 </div>
             </div>
         </section>
-    </>
-);
+    );
+};
 
-export default Home;
+export default Projects;
