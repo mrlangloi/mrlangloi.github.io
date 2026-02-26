@@ -55,7 +55,7 @@ a {
     padding: 0 2rem;
 }
 
-.featured-projects {
+.projects-section {
     padding: calc(var(--spacing-unit)*24) 0;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ a {
     justify-content: center;
 }
 
-.featured-projects h1 {
+.projects-section h1 {
     margin-bottom: calc(var(--spacing-unit)*10);
     width: 100%;
     text-align: center;
@@ -72,8 +72,14 @@ a {
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); 
     gap: calc(var(--spacing-unit)*5);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+    }
 }
 
 @media (max-width: 768px) {
