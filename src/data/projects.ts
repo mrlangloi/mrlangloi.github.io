@@ -36,7 +36,7 @@ export const featuredProjects = featuredProjectsList.map((project, index) => ({
 const allProjectsList = [
     {
         title: "OBS Canvas Overlay v2 (Work in Progress)",
-        description: "An updated OBS Canvas Overlay using TypeScript, React Compiler, and PostgreSQL",
+        description: "An updated OBS Canvas Overlay using TypeScript, React Compiler, Spring Boot, and PostgreSQL",
         tech: ["TypeScript", "Java", "React", "React Compiler", "Vite", "Node.js", "Spring Boot", "PostgreSQL", "CSS"],
         link: "https://github.com/mrlangloi/obs-canvas"
     },
