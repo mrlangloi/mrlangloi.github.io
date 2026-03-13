@@ -62,7 +62,7 @@ const allProjectsList = [
     {
         title: "Stock Image Searcher",
         description: "An image searcher using Pexels Image API to find and display stock images based on user queries",
-        tech: ["JavaScript", "React", "CSS"],
+        tech: ["JavaScript", "React", "Node.js", "CSS"],
         link: "https://github.com/mrlangloi/img-searcher"
     },
 ];
