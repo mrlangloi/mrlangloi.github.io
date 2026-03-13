@@ -37,13 +37,13 @@ const allProjectsList = [
     {
         title: "OBS Canvas Overlay v2 (Work in Progress)",
         description: "An updated OBS Canvas Overlay using TypeScript, React Compiler, and PostgreSQL",
-        tech: ["TypeScript", "React", "React Compiler", "Node.js", "Express", "PostgreSQL"],
+        tech: ["TypeScript", "Java", "React", "React Compiler", "Vite", "Node.js", "Spring Boot", "PostgreSQL", "CSS"],
         link: "https://github.com/mrlangloi/obs-canvas"
     },
     {
-        title: "CS SFU Course Planner (Hackathon Project)",
-        description: "A Computer Sciencecourse planner for SFU students built during SystemsHacks 2026",
-        tech: ["JavaScript", "React", "CSS"],
+        title: "SFU Graduation Planner (xHacks 2026)",
+        description: "A graduation planner for SFU Computing Science students built during a 24-hour hackathon, xHacks 2026",
+        tech: ["JavaScript", "React", "Vite", "Node.js", "CSS"],
         link: "https://github.com/mrlangloi/obs-canvas"
     },
     {
