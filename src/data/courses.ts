@@ -38,6 +38,14 @@ const courseList = [
         title: "Data Structures and Algorithms",
     },
     {
+        code: "CMPT 371",
+        title: "Data Communications and Networking",
+    },
+        {
+        code: "CMPT 372",
+        title: "Web II - Server-side Development",
+    },
+    {
         code: "CMPT 383",
         title: "Comparative Programming Languages",
     },
