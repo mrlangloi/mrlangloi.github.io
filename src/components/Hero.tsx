@@ -7,7 +7,7 @@ const Hero = () => {
                 <p className={styles["hero-eyebrow"]}>Hello, I'm</p>
                 <h1 className={styles["hero-title"]}>Ricky C.!</h1>
                 <div className={styles["hero-description"]}>
-                    <h2>3rd-year Software Systems Student @ Simon Fraser University</h2>
+                    <h2>Software Systems Student @ Simon Fraser University</h2>
                     <p>I excel in building applications and troubleshooting technical issues.</p>
                 </div>
             </div>
