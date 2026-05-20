@@ -1,0 +1,187 @@
+/* ─── About ──────────────────────────────────────────────── */
+.about-section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: calc(var(--nav-h) + var(--sp-16)) var(--page-px) var(--sp-32);
+}
+
+/* section header — matches projects-section h1 style */
+.about-heading {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--sp-12);
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+}
+
+.about-heading::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+.about-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--sp-16);
+    align-items: start;
+}
+
+/* ─── Text side ──────────────────────────────────────────── */
+.about-text-side h1 {
+    font-family: var(--font-ui);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: var(--sp-6);
+}
+
+.about-intro {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--ink-2);
+    font-weight: 300;
+    margin-bottom: var(--sp-4);
+    max-width: 540px;
+}
+
+.about-outro {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: var(--ink-3);
+    font-weight: 300;
+    margin-top: var(--sp-8);
+    max-width: 480px;
+}
+
+/* ─── Courses ────────────────────────────────────────────── */
+.courses-container {
+    margin: var(--sp-10) 0;
+}
+
+.courses-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: var(--sp-4);
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+}
+
+.courses-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+}
+
+.courses-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: var(--sp-8);
+}
+
+.courses-grid li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--sp-3);
+    padding: var(--sp-2) 0;
+    font-size: 0.825rem;
+    color: var(--ink-2);
+    border-bottom: 1px solid var(--rule);
+    font-weight: 300;
+    line-height: 1.5;
+    transition: color var(--t-fast), background-color var(--t-fast);
+}
+
+.courses-grid li:hover { color: var(--ink); }
+
+.course-code {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    min-width: 76px;
+    flex-shrink: 0;
+    opacity: 0.7;
+}
+
+/* ─── Image side ─────────────────────────────────────────── */
+.about-image-side {
+    position: sticky;
+    top: calc(var(--nav-h) + var(--sp-8));
+}
+
+/* terminal-style frame around photo */
+.photo-frame {
+    border: 1px solid var(--rule);
+    background: var(--bg-card);
+    overflow: hidden;
+}
+
+.photo-frame-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: 1px solid var(--rule);
+    background: var(--bg-elevated);
+}
+
+.photo-frame-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--rule-bright);
+}
+
+.photo-frame-label {
+    font-family: var(--font-mono);
+    font-size: 0.63rem;
+    color: var(--ink-3);
+    margin-left: auto;
+    letter-spacing: 0.04em;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(30%) contrast(1.05);
+    transition: filter var(--t-mid) var(--ease);
+}
+
+.profile-photo:hover {
+    filter: grayscale(0%) contrast(1);
+}
+
+/* ─── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .about-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--sp-10);
+    }
+
+    .about-image-side {
+        position: static;
+        max-width: 200px;
+    }
+
+    .about-text-side h1 { font-size: 2rem; }
+}
