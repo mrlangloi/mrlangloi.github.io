@@ -1,7 +1,7 @@
-import Course from "../components/Course";
-import { courses } from "../data/courses";
-import myProfileImage from "../assets/my_image.jpg";
-import styles from "./About.module.css";
+import Course from "../components/Course"
+import { courses } from "../data/courses"
+import myProfileImage from "../assets/my_image.jpg"
+import styles from "./About.module.css"
 
 const About = () => {
     return (
@@ -57,7 +57,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default About;
+export default About

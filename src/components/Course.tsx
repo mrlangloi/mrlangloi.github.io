@@ -1,12 +1,12 @@
 interface CourseProps {
-    id: number;
-    code: string;
-    title: string;
-    codeClassName?: string;
-};
+    id: number
+    code: string
+    title: string
+    codeClassName?: string
+}
 
 const Course = (props: CourseProps) => {
-    const { code, title, codeClassName } = props;
+    const { code, title, codeClassName } = props
 
     return (
         <li>
@@ -15,7 +15,7 @@ const Course = (props: CourseProps) => {
             </span>
             {title}
         </li>
-    );
-};
+    )
+}
 
-export default Course;
+export default Course

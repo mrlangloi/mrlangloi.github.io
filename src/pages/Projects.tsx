@@ -1,11 +1,13 @@
-import ProjectCard from '../components/ProjectCard';
-import { allProjects } from '../data/projects';
+import ProjectCard from '../components/ProjectCard'
+import { allProjects } from '../data/projects'
 
 const Projects = () => {
     return (
         <section className="home-section">
             <div className="projects-section projects-section-all">
+
                 <h1>All Projects</h1>
+
                 <div className="grid">
                     {allProjects.map((project) => (
                         <ProjectCard
@@ -18,9 +20,10 @@ const Projects = () => {
                         />
                     ))}
                 </div>
+
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Projects;
+export default Projects

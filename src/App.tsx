@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import './App.css';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import About from './pages/About';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 function App() {
@@ -21,12 +20,13 @@ function App() {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/about" element={<About />} />
                     </Routes>
+
                     {/* Footer */}
                     <Footer />
                 </main>
             </div>
         </Router>
-    );
+    )
 }
 
-export default App;
+export default App
