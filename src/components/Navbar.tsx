@@ -1,10 +1,10 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faSteam } from '@fortawesome/free-brands-svg-icons/faSteam';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from "./Navbar.module.css";
-import { Link } from 'react-router-dom';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
+import { faSteam } from '@fortawesome/free-brands-svg-icons/faSteam'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './Navbar.module.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -18,9 +18,13 @@ const Navbar = () => {
                 </div>
 
                 <ul className={styles["nav-links"]}>
+
                     <li><Link to="/projects">Projects</Link></li>
+
                     <li><Link to="/about">About</Link></li>
+
                     {/* <li><a href="#contact">Contact</a></li> */}
+                    
                     <li>
                         <div className={styles["nav-contacts"]}>
                             <a className={styles["nav-contacts-icons"]} href="https://www.linkedin.com/in/ricky-c0997/" target="_blank" rel="noopener noreferrer">
@@ -40,7 +44,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

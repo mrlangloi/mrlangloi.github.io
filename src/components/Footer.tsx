@@ -1,9 +1,9 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import { faSteam } from "@fortawesome/free-brands-svg-icons/faSteam";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./Footer.module.css";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin"
+import { faSteam } from "@fortawesome/free-brands-svg-icons/faSteam"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import styles from "./Footer.module.css"
 
 const Footer = () => (
     <footer id="footer" className={styles["footer-section"]}>
@@ -41,6 +41,6 @@ const Footer = () => (
             </div>
         </div>
     </footer>
-);
+)
 
-export default Footer;
+export default Footer

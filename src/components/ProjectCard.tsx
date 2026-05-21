@@ -1,23 +1,27 @@
-import React from "react";
-import styles from "./ProjectCard.module.css";
-import { PATTERNS, COLORS } from "../data/patterns.ts";
+import React from "react"
+import styles from "./ProjectCard.module.css"
+import { PATTERNS, COLORS } from "../data/patterns.ts"
 
 interface ProjectProps {
-    id: number;
-    title: string;
-    description: string;
-    tech: string[];
-    link: string;
-};
+    id: number
+    title: string
+    description: string
+    tech: string[]
+    link: string
+}
 
 const ProjectCard = (props: ProjectProps) => {
 
-    const { id, title, description, tech, link } = props;
+    const { id, title, description, tech, link } = props
 
-    const pattern = PATTERNS[(id - 1) % PATTERNS.length];
-    const color = COLORS[(id - 1) % COLORS.length];
+    const pattern = PATTERNS[(id - 1) % PATTERNS.length]
+    const color = COLORS[(id - 1) % COLORS.length]
     
-    const style = { backgroundImage: `url("${pattern}")`, backgroundColor: color, backgroundSize: '128px' };
+    const style = { 
+        backgroundImage: `url("${pattern}")`,
+        backgroundColor: color,
+        backgroundSize: '128px' 
+    }
 
     return (
         <div className={styles.card}>
@@ -38,7 +42,7 @@ const ProjectCard = (props: ProjectProps) => {
             </div>
 
         </div>
-    );
-};
+    )
+}
 
-export default ProjectCard;
+export default ProjectCard
