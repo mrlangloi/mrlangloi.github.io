@@ -13,7 +13,7 @@ const About = () => {
                 <div className={styles["about-text-side"]}>
                     <h1>About Me</h1>
                     <p className={styles["about-intro"]}>
-                        I'm a 3rd year Computing Science student at Simon Fraser University,
+                        I'm a Computer Science student at Simon Fraser University,
                         concentrating in Software Systems. I enjoy building software and understanding
                         the methods and patterns that enhance scalability.
                     </p>

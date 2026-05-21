@@ -18,12 +18,11 @@ const Hero = () => {
 
                     <p className={styles["hero-role"]}>
                         <span className={styles["hero-role-prefix"]}>const role = </span>
-                        "Software Systems Student @ SFU"
+                        "Software Systems @ Simon Fraser University"
                     </p>
 
                     <p className={styles["hero-bio"]}>
-                        I build applications and understand the methods and patterns
-                        that enhance scalability. Focused on clean systems design
+                        I build applications with a focus on clean systems design
                         and writing software that lasts.
                     </p>
                 </div>
