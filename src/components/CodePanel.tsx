@@ -1,4 +1,4 @@
-import { CodeLine, TokenType } from '../types/token'
+import { CodeLine } from '../types/token'
 import styles from './Hero.module.css'
 import Line from './Line'
 
